@@ -1,0 +1,113 @@
+.contact-form {
+    width: 70%;
+    margin-top: 20px;
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            overflow: hidden;
+            position: relative;
+            opacity: 0;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+            clear: both;
+        }
+
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    input[type='text'],
+    input[type='email'] {
+        width: 100%;
+        bottom: 0;
+        background: rgb(0, 191, 255);
+        height: 50px;
+        font-size: 18px;
+        color: #fff;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        width: 100%;
+        border: 0;
+        background: rgb(0, 191, 255);
+        height: 50px;
+        font-size: 18px;
+        color: #fff;
+        padding: 20px;
+        min-height: 150px;
+        box-sizing: border-box;
+    }
+
+    .flat-button {
+        color: rgb(14, 212, 113);
+        background: 0 0;
+        font: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 2px solid rgb(14, 212, 113);
+        float: right;
+        border-radius: 4px;
+
+        &:hover {
+            box-shadow: -3px 3px 30px rgb(0, 191, 255);
+        }
+    }
+}
+
+.info-map {
+    position: absolute;
+    background: #000000;
+    top: 50px;
+    right: 10%;
+    z-index: 999999;
+    width: 267px;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    font-weight: 300px;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s;
+    animation-fill-mode: forwards;
+
+    span {
+        font-size: 16px;
+        display: block;
+        padding-top: 20px;
+        color: rgb(0, 191, 255);
+    }
+}
+
+.map-wrap {
+    background: rgb(14, 212, 113, 0.1);
+    float: right;
+    width: 40%;
+    height: 100%
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+}

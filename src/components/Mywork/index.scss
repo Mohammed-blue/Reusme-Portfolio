@@ -1,0 +1,63 @@
+/*   color variables */
+$clr-primary: #d50000;
+$clr-gray300: #e1e5ee;
+$clr-gray400: #767b91;
+
+
+/*   border radius */
+$radius: 0.2rem;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 40rem));
+  gap: 6rem;
+  justify-content: center;
+  margin-top: 10rem;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards; //animate.css
+  animation-delay: 1s;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0 2px 20px $clr-gray400;
+  border-radius: $radius;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+
+  &__image {
+    height: 16rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    padding: 1rem;
+  }
+
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+}
