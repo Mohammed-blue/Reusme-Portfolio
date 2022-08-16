@@ -33,14 +33,22 @@ const About = () => {
                         {/* idx={15} means 1.5s delay */}
                     </h1>
                     <p>
-                    I'm very ambitious front-end developer looking for a role in
-                    established IT company with the opportunity to work with the latest
-                    technologies on challenging and diverse projects.
+                    Many different hats are worn by life learners,
+                    and I am one of them who appreciates picking up new, intriguing skills.
+                    I've found that programming is what I'm meant to do. Due to the fact that
+                    creating software necessitates creative thinking, critical thinking, and problem-solving.
+                    I like developing professionally, in teams, and as a pastime.
                     </p>
+                    <br />
                     <p align="LEFT">
+                    Learning and experimenting with new coding languages, libraries, and
+                    frameworks is one of my favorite things to do, and
+                    I am committed to learning efficiently. Solving coding challenges creatively and
+                    putting newly learned skills to use brings joy.
                     I'm quietly confident, naturally curious, and perpetually working on
                     improving my chops one design problem at a time.
                     </p>
+                    <br />
                     <p>
                     If I need to define myself in one sentence that would be an ambitious
                     person, adaptable, a video games fanatic,
